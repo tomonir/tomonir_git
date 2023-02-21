@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+
+
+
+
+ <head>
+  
+  
+<script type="text/javascript">
+    setTimeout(function () { 
+      location.reload();
+    }, 60 * 1000);
+</script>
+  
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+function showTime() {
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    document.getElementById("timeFiled").innerHTML = time;
+}
+
+
+
+var timeDisplayInterval = setInterval(function() { showTime(); }, 1000);
+
+$('a').click(function() {
+    clearInterval(timeDisplayInterval);
+});
+
+
+</script>
+  
+  
+  
+  	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	
+	<link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	
+
+
+	<body>
+	<a href="#">Stop!</a>
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="table-wrap">
+					       
+					       
+					       <table class="table table-dark">
+
+						  <tbody>
+						   $DATECONTENT
+						  <tr class="bg-success">
+						      <td style="text-align: center;font-size:300%;font-family: 'Orbitron', sans-serif;" id="timeFiled" >-</td>
+						    </tr>
+						   
+
+						  </tbody>
+						</table>
+					       
+					       
+					       
+						<table class="table table-dark">
+						  
+						$PRAYERCONTENT
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
+</html>
+

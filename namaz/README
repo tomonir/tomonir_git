@@ -1,0 +1,18 @@
+python3 is required
+
+
+2. install the followings 
+pip3 install BeautifulSoup4
+pip3 install lxml
+pip3 install html5lib
+
+
+
+3. Give correct path at cron.sh
+
+4. set cron job
+How to setup cront job:
+https://ostechnix.com/a-beginners-guide-to-cron-jobs/
+
+example:
+*/5 * * * * /home/mmoniruzzaman/Desktop/namaz/cron.sh
